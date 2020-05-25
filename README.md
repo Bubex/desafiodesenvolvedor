@@ -1,30 +1,28 @@
-# CityConnect
-## Desafio para a vaga de desenvolvedor
+# Desafio CityConnect
+## Instruções
 
-Esse repositório contém as instruções para a realização do desafio para a vaga de Desenvolvedor PHP na CityConnect
+## API
 
-### Instruções
-- Faça um fork do projeto para sua conta pessoal
-- Coloque seu teste dentro do diretório /seu-nome
-- Submeta seu código criando um Pull Request para esse repositório
+Para rodar o projeto a API:
 
-### O desafio
+Criar um banco de dados MYSQL com nome "CRUDCity"
 
-Faça um CRUD básico para cadastro de usuários em PHP e MySQL. Fique à vontade para usar algum framework ou biblioteca de sua preferência, 
-tanto frontend quando backend 
+executar o composer para instalação dos pacotes:
+### `composer install`
 
-O cadastro deve conter:
-- Nome
-- Data de nascimento
-- Sexo
-- Data de cadastro
+Em seguida executar o migrate para criação das tabelas:
+### `php artisan migrate`
 
-Esperamos que seja realmente um CRUD, ou seja, precisa necessariamente ter as funcionalidades Create, Read, Update e Delete 
+Na sequência o Seed de usuários teste:
+### `php artisan db:seed`
 
-Itens como validação, filtros de busca, etc, não são obrigatórios, 
-mas fique à vontade para implementar o que julgar necessário.
-Lembre-se que estaremos avaliando todo o seu trabalho
+Por fim rodar o projeto da API:
+### `php artisan serve`
 
-### Dúvidas?
+## API
 
-Envie um email para desenvolvimento@cityconnect.com.br
+Instale os pacotes 
+### `yarn install`
+
+Com api rodando por padrão na porta 8000, execute o projeto em ReactJS:
+### `yarn start`
